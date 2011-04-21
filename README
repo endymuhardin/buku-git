@@ -1,0 +1,11 @@
+Buku Git
+
+Kebutuhan Aplikasi : 
+1. Java SDK versi terbaru
+2. Maven 2 versi terbaru
+
+Cara penggunaan : 
+1. Clone dulu repositorynya
+2. Build dengan maven
+3. Buku hasil pemrosesan ada di folder target
+4. Untuk melakukan perubahan, edit sourcenya di folder src/main/docbkx
