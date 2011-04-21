@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN" "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd">
+<chapter id="intro">
+	<title>Pendahuluan</title>
+
+    <section id="tentang.version-control">
+		<title>Tentang Version Control</title>
+		<para>
+			TODO 
+		</para>
+	</section>
+
+	<section id="tentang.git">
+		<title>Tentang Git</title>
+		<para>
+			TODO
+		</para>
+	</section>
+	
+	<section id="tentang.buku">
+		<title>Tentang Buku Git</title>
+		
+		<section id="tentang.buku.tujuan">
+		    <title>Mengapa buku ini ditulis</title>
+		    <para>
+			    TODO
+		    </para>
+	    </section>
+	    
+	    <section id="tentang.buku.pembaca">
+		    <title>Siapa yang sebaiknya membaca</title>
+		    <para>
+			    TODO
+		    </para>
+	    </section>
+	    
+	    <section id="tentang.buku.susunan">
+		    <title>Bagaimana urutan membacanya</title>
+		    <para>
+			    TODO
+		    </para>
+	    </section>
+	    
+	    <section id="tentang.buku.format">
+		    <title>Format penulisan</title>
+		    <para>
+			    TODO
+		    </para>
+	    </section>
+	    
+	    <section id="tentang.buku.lisensi">
+		    <title>Lisensi</title>
+		    <para>
+			    TODO
+		    </para>
+	    </section>
+	</section>
+	
+	<section id="tentang.kontribusi">
+		<title>Kontribusi</title>
+		<para>
+			TODO
+		</para>
+	</section>
+	
+</chapter>

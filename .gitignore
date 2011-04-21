@@ -1,0 +1,21 @@
+# Eclipse
+.settings
+.metadata
+.project
+.classpath
+Servers
+bin
+target
+
+# SpringSource Tool Suite
+.springBeans
+
+# Gradle
+.gradle
+
+# Netbeans
+build
+dist
+private
+
+

@@ -1,0 +1,143 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+		
+	<groupId>com.artivisi.buku</groupId>
+	<artifactId>buku-git</artifactId>
+	<packaging>pom</packaging>
+	<version>1.0.0</version>
+	
+	<name>Buku Git</name>
+	<inceptionYear>2011</inceptionYear>
+	
+	
+	<properties>
+		<docbook.source>${project.basedir}/src/main/docbkx</docbook.source>
+		<docbook.target>${project.build.directory}/docbkx</docbook.target>
+	</properties>
+	<build>
+		<defaultGoal>generate-resources</defaultGoal>
+		<plugins>
+			<plugin>
+				<groupId>com.agilejava.docbkx</groupId>
+				<artifactId>docbkx-maven-plugin</artifactId>
+				<version>2.0.7</version>
+				<executions>
+					<execution>
+						<id>produce pdf</id>
+						<goals>
+							<goal>generate-pdf</goal>
+						</goals>
+						<configuration>
+							<foCustomization>${docbook.source}/resources/xsl/fopdf.xsl</foCustomization>
+							<imgSrcPath>${docbook.source}/</imgSrcPath>
+							<targetDirectory>${docbook.target}/pdf</targetDirectory>
+						</configuration>
+						<phase>generate-resources</phase>
+					</execution>
+					<execution>
+						<id>produce single page html</id>
+						<goals>
+							<goal>generate-html</goal>
+						</goals>
+						<configuration>
+							<chunkedOutput>false</chunkedOutput>
+							<htmlCustomization>${docbook.source}/resources/xsl/html.xsl</htmlCustomization>
+							<targetDirectory>${docbook.target}/html-single</targetDirectory>
+							<postProcess>
+								<copy todir="${docbook.target}/html-single">
+									<fileset dir="${docbook.source}/resources">
+										<include name="**/*.css" />
+										<include name="**/*.png" />
+										<include name="**/*.gif" />
+										<include name="**/*.jpg" />
+									</fileset>
+								</copy>
+								<copy todir="${docbook.target}/html-single/images">
+									<fileset dir="${docbook.source}/chapters/images">
+										<include name="**/*.*" />
+									</fileset>
+								</copy>
+							</postProcess>
+						</configuration>
+						<phase>generate-resources</phase>
+					</execution>
+					<execution>
+						<id>produce multi-pages html</id>
+						<goals>
+							<goal>generate-html</goal>
+						</goals>
+						<configuration>
+							<chunkedOutput>true</chunkedOutput>
+							<htmlCustomization>${docbook.source}/resources/xsl/html-chunk.xsl</htmlCustomization>
+							<targetDirectory>${docbook.target}/html</targetDirectory>
+							<postProcess>
+								<copy todir="${docbook.target}/html">
+									<fileset dir="${docbook.source}/resources">
+										<include name="**/*.css" />
+										<include name="**/*.png" />
+										<include name="**/*.gif" />
+										<include name="**/*.jpg" />
+									</fileset>
+								</copy>
+								<copy todir="${docbook.target}/html/images">
+									<fileset dir="${docbook.source}/chapters/images">
+										<include name="**/*.*" />
+									</fileset>
+								</copy>
+							</postProcess>
+						</configuration>
+						<phase>generate-resources</phase>
+					</execution>
+				</executions>
+				<dependencies>
+					<dependency>
+						<groupId>org.docbook</groupId>
+						<artifactId>docbook-xml</artifactId>
+						<version>4.4</version>
+						<scope>runtime</scope>
+					</dependency>
+					<!--  image support for pdf production -->
+					<dependency>
+						<groupId>javax.media</groupId>
+						<artifactId>jai-core</artifactId>
+						<version>1.1.3</version>
+						<scope>runtime</scope>
+					</dependency>
+					<dependency>
+						<groupId>javax.media</groupId>
+						<artifactId>jai-codec</artifactId>
+						<version>1.1.3</version>
+						<scope>runtime</scope>
+					</dependency>
+				</dependencies>
+				<configuration>
+					<!-- <includes>index.xml</includes> -->
+					<htmlStylesheet>css/html.css</htmlStylesheet>
+					<xincludeSupported>true</xincludeSupported>
+					<sourceDirectory>${docbook.source}</sourceDirectory>
+					<imgSrcPath>./</imgSrcPath>
+					<!-- use extensions -->
+					<useExtensions>1</useExtensions>
+					<highlightSource>1</highlightSource>
+					<highlightDefaultLanguage></highlightDefaultLanguage>
+					<!-- callouts -->
+					<calloutsExtension>1</calloutsExtension>
+					<entities>
+						<entity>
+							<name>version</name>
+							<value>${version}</value>
+						</entity>
+					</entities>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<configuration>
+					<descriptorRefs>
+						<descriptorRef>src</descriptorRef>
+					</descriptorRefs>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
