@@ -3,66 +3,232 @@
 
 
 <chapter id="01.01.intro">
-		<title>Pendahuluan</title>
+	<title>Pendahuluan</title>
 
-		<section id="01.01.01.tentang.version-control">
-			<title>Tentang Version Control</title>
-			<para>
-				TODO 
+	<section id="01.01.01.tentang.version-control">
+		<title>Tentang Version Control</title>
+		<para>
+			Version Control adalah sebuah aplikasi yang mampu mengelola perubahan terhadap file. 
+			Dia mencatat perubahan apa saja yang terjadi, kapan terjadi, siapa yang mengubah, dan apa isi perubahannya.
+			Dengan menggunakan version control, file dapat dikerjakan secara bersamaan oleh lebih dari satu orang dengan aman.
+			Ini merupakan fitur yang esensial dalam kegiatan pembangunan aplikasi perangkat lunak atau pemrograman. 
 		</para>
-		</section>
-
-		<section id="01.01.02.tentang.git">
-			<title>Tentang Git</title>
-			<para>
-				TODO
+		<para>
+			Ada dua jenis version control, terpusat (centralized) dan terdistribusi (distributed). 
+			Version control terpusat memiliki satu database (atau dikenal dengan istilah repository) yang digunakan oleh banyak orang. 
+			Salah satu aplikasi version control terpusat yang terkenal adalah <ulink url="http://subversion.tigris.org">Subversion</ulink>.  
 		</para>
-		</section>
-
-		<section id="01.01.03.tentang.buku">
-			<title>Tentang Buku Git</title>
-
-			<section id="01.01.03.01.tentang.buku.tujuan">
-				<title>Mengapa buku ini ditulis</title>
-				<para>
-					TODO
-		    </para>
-			</section>
-
-			<section id="01.01.03.02.tentang.buku.pembaca">
-				<title>Siapa yang sebaiknya membaca</title>
-				<para>
-					TODO
-		    </para>
-			</section>
-
-			<section id="01.01.03.03.tentang.buku.susunan">
-				<title>Bagaimana urutan membacanya</title>
-				<para>
-					TODO
-		    </para>
-			</section>
-
-			<section id="01.01.03.04.tentang.buku.format">
-				<title>Format penulisan</title>
-				<para>
-					TODO
-		    </para>
-			</section>
-
-			<section id="01.01.03.05.tentang.buku.lisensi">
-				<title>Lisensi</title>
-				<para>
-					TODO
-		    </para>
-			</section>
-		</section>
-
-		<section id="01.01.04.tentang.kontribusi">
-			<title>Kontribusi</title>
-			<para>
-				TODO
+		<para>
+			Version control terdistribusi memiliki satu repository untuk masing-masing pengguna. 
+			Repository ini berdiri sendiri, tapi bisa disinkronisasikan antar pengguna dengan berbagai metode.  
+			Aplikasi version control terdistribusi yang terkenal antara lain 
+			adalah <ulink url="http://git-scm.org">Git</ulink> dan <ulink url="http://mercurial.selenic.com">Mercurial</ulink>. 
 		</para>
+	</section>
+
+	<section id="01.01.02.tentang.git">
+		<title>Tentang Git</title>
+		<para>
+			Git diciptakan oleh Linus Torvalds. Ya, Anda benar, Linus Torvalds <emphasis>yang itu</emphasis>. Si pembuat Linux. 
+		</para>
+		<para>
+			Alkisah pada jaman dahulu kala, Linus tidak menggunakan version control sama sekali. 
+			Dia menerima kontribusi kode program dalam bentuk email. Email berisi potongan kode (patch) ini 
+			lalu diintegrasikannya ke kode programnya sendiri. 
+			Begitu seterusnya sehingga sistem operasi Linux memiliki banyak fitur yang sebagian besarnya adalah sumbangan orang lain. 
+		</para>
+		<para>
+			Seiring dengan makin bertambahnya kontributor Linux, Linus pun merasa kewalahan dalam memproses email yang masuk. 
+			Ini mengakibatkan perkembangan sistem operasi Linux menjadi lambat, dibatasi oleh kecepatan Linus membuka emailnya. 
+			Pada saat yang genting ini, datanglah Larry McVoy menawarkan dagangannya, 
+			yaitu <ulink url="http://en.wikipedia.org/wiki/BitKeeper">BitKeeper</ulink>.
+		</para>
+		<para>
+			Rupanya BitKeeper ini sesuai dengan cara kerja Linus, sehingga diapun dengan gembira memakainya. 
+			Apalagi dengan diiming-imingi fasilitas gratis iuran tahunan, tidak kalah dengan penawaran kartu kredit di mal. 
+			Dengan segera, BitKeeper menjadi version control resmi dalam kegiatan pengembangan Linux.
+		</para>
+		<para>
+			Walaupun demikian, kemesraan ini tidak berlangsung lama. 
+			Andrew Tridgell, salah satu kontributor Linux dan pembuat aplikasi Samba, 
+			mencoba mendownload isi repository BitKeeper. 
+			Hal ini membuat Larry McVoy marah dan menghentikan fasilitas gratis iuran tahunan penggunaan BitKeeper. 
+			Bahkan beberapa kontributor, khususnya yang berstatus karyawan OSDL, tidak diperbolehkan membeli lisensinya. 
+			Jangankan gratis, bayar saja tidak boleh.  
+		</para>
+		<para>
+			Menghadapi kondisi ini, akhirnya Linus Torvalds memutuskan untuk membuat sendiri aplikasi version control. Hasilnya adalah Git.  
+		</para>
+	</section>
+
+	<section id="01.01.03.tentang.buku">
+		<title>Tentang Buku Git</title>
+
+		<section id="01.01.03.01.tentang.buku.tujuan">
+			<title>Mengapa buku ini ditulis</title>
+			<para>
+				Penggunaan version control adalah langkah pertama menuju software engineering yang baik dan benar. 
+				Sebuah tim yang membuat aplikasi perangkat lunak tidak akan bisa bekerja sama dengan lancar tanpa version control.
+				Sayangnya, referensi yang membahas version control dalam bahasa Indonesia masih sangat minim. 
+				Dengan adanya buku ini, mudah-mudahan bisa meningkatkan efektifitas para programmer Indonesia 
+				sehingga bisa berdiri setara dengan koleganya di dunia internasional.
+		    </para>
 		</section>
 
-	</chapter>
+		<section id="01.01.03.02.tentang.buku.pembaca">
+			<title>Siapa yang sebaiknya membaca</title>
+			<para>
+				Buku ini ditujukan bagi mereka yang ingin menggunakan version control. 
+				Pengguna terbesar version control biasanya adalah programmer. 
+				Walaupun demikian, version control dapat digunakan untuk mengelola segala macam file, 
+				sehingga bisa juga digunakan oleh non-programmer.
+		    </para>
+		    <para>
+		    	Untuk bisa memahami buku ini tidak dibutuhkan pengetahuan khusus 
+		    	kecuali dasar penggunaan komputer biasa saja. 
+		    	Pembaca harus mahir membuat folder dan mengedit file teks.
+		    </para>
+		</section>
+
+		<section id="01.01.03.03.tentang.buku.susunan">
+			<title>Bagaimana urutan membacanya</title>
+			<para>
+				Buku ini dibagi menjadi tiga bagian, yaitu:
+				<itemizedlist>
+					<listitem>penggunaan harian</listitem>
+					<listitem>manajemen proyek dan tim</listitem>
+					<listitem>administrasi sistem</listitem>
+				</itemizedlist>
+		    </para>
+		    <para>
+		    	Bagian pertama berisi cara menggunakan Git. 
+		    	Dengan menguasai bagian pertama ini, 
+		    	kita sudah bisa bekerja secara produktif baik sendirian maupun dalam tim. 
+		    	Bukan hanya teknik dasar, 
+		    	di bagian ini juga dibahas teknik tingkat tinggi seperti branch, merge, rebase, dan lainnya. 
+		    	Kita juga akan belajar cara penggunaan remote repository di sini.
+		    </para>
+		    <para>
+		    	Jika Anda seorang team leader atau manajer, 
+		    	Anda perlu mendefinisikan prosedur kerja tim supaya anggota tim Anda bisa bekerja sama dengan efektif. 
+		    	Di bagian kedua, kita akan melihat bagaimana Git digunakan untuk membuat kerja tim menjadi lebih efektif dan efisien. 
+		    	Dengan membahas beberapa studi kasus, kita akan memahami bagaimana mendayagunakan Git secara maksimal.
+		    </para>
+		    <para>
+		    	Agar tim kita bisa menggunakan Git tentu kita harus menyediakan infrastrukturnya. 
+		    	Cara instalasi server, konfigurasi akses kontrol, backup dan restore, semua akan dibahas di bagian ketiga. 
+		    	Di bagian ini juga dibahas beberapa perangkat pelengkap lain untuk meningkatkan efektifitas dan efisiensi kerja tim. 
+		    </para>
+		    <para>
+		    	Sebagian besar isi bagian ketiga membahas tentang instalasi dan konfigurasi server. 
+		    	Oleh karena itu, pengetahuan mendalam tentang Linux dan jaringan sangat dibutuhkan untuk menguasai bagian ketiga ini.
+		    </para>
+		</section>
+
+		<section id="01.01.03.04.tentang.buku.format">
+			<title>Format penulisan</title>
+			<para>
+				Agar lebih enak dibaca, kita akan membedakan bentuk dan warna tulisan sebagai berikut.
+
+				Perintah yang kita berikan pada komputer ditulis seperti ini.
+			</para>
+			<para>
+				<command>git --version</command>
+			</para>
+			<para>	
+				Hasil yang ditampilkan komputer ditulis seperti ini.
+				
+				<screen>git version 1.7.4.1</screen>
+				
+				Catatan khusus.
+				Seringkali ada hal penting yang perlu mendapat perhatian khusus. Ini ditulis di menjorok ke tengah seperti contoh berikut.
+				<note>
+					<title>Working Folder Git</title>
+					<para>
+						Working folder Git mengandung repository lengkap mulai dari revisi pertama sampai terbaru.
+					</para>
+				</note>
+				
+				Berikut contoh kode program HTML.
+				
+				<programlisting language="xml"><![CDATA[<html>
+	<head>
+		<title>Halo Dunia</title
+	</head>
+	<body>
+		<h1>Halo Dunia</h1>
+	</body>
+</html>]]></programlisting>
+				
+				Dan ini cara penulisan file konfigurasi
+				<screen>
+# Ignore file eclipse
+.settings
+.metadata
+.project
+.classpath
+bin
+
+# Ignore hasil kompilasi Maven				
+target
+				</screen>
+		    </para>
+		</section>
+
+		<section id="01.01.03.05.tentang.buku.lisensi">
+			<title>Lisensi</title>
+			<para>
+				Buku ini memiliki lisensi Creative Commons Attribution Share Alike (CC-BY-SA). Artinya, semua orang:
+				<itemizedlist>
+					<listitem>
+						bebas menggunakan buku ini tanpa harus membayar, baik untuk keperluan non-profit maupun komersil. Anda boleh membuka pelatihan berbayar menggunakan buku ini.
+					</listitem>
+					<listitem>
+						bebas membagikan buku ini kepada siapa saja. 
+					</listitem>
+					<listitem>
+						bebas membuat perubahan terhadap isi buku ini.
+					</listitem>
+				</itemizedlist>
+				
+				Semua kebebasan di atas hanya memiliki syarat yaitu tetap harus menyebutkan nama pengarang yang aslinya. 
+				Ini disebut dengan istilah attribution. Singkatnya, boleh dipakai dan dibagikan asal jangan diakui sebagai karya sendiri.
+				
+				Selain itu, segala perubahan yang dibuat juga harus dilisensikan sama dengan buku ini. Ini disebut dengan istilah Share-Alike.
+				
+				Lebih lanjut tentang lisensi ini bisa dilihat di <ulink url="http://creativecommons.org/licenses/"></ulink>
+		    </para>
+		</section>
+	</section>
+
+	<section id="01.01.04.tentang.kontribusi">
+		<title>Kontribusi</title>
+		<para>
+			Semua orang boleh dan dianjurkan untuk ikut membantu penulisan buku ini. 
+			Bagaimana caranya? Gampang. Ada beberapa pekerjaan yang dapat dilakukan.
+		</para>
+		<para>
+			<emphasis>Reviewer</emphasis>
+		</para>
+		<para>
+			Tugasnya adalah memeriksa isi buku dan memberikan koreksi. 
+			Apa saja boleh dikoreksi, mulai dari tanda baca, salah ketik, 
+			contoh latihan tidak bisa dijalankan, apa saja. 
+			Kalau ada penjelasan yang kurang jelas juga boleh dikomentari. 
+			Apapun yang bisa membuat buku ini lebih baik.
+			Hasil review dapat dientri di <ulink url="https://github.com/endymuhardin/buku-git/issues">halaman Issue di Github</ulink>.
+		</para>
+		<para>	
+			<emphasis>Penulis</emphasis>
+		</para>
+		<para>
+			Bagus sekali kalau Anda ingin menyumbangkan tulisan. Lebih banyak yang mencerdaskan bangsa lebih baik. Begini caranya.
+			Sebagai penulis buku Git, tentu Anda sudah paham cara menggunakan Git, 
+			dan juga kemungkinan besar sudah punya account di Github. 
+			Langsung saja fork repository buku-git ini dan segeralah berkarya. 
+			Begitu dirasa sudah memadai, kirimkan pull request ke saya. 
+			Nanti akan saya merge ke repository saya.
+		</para>
+	</section>
+
+</chapter>

@@ -17,6 +17,21 @@
 
 		<legalnotice>
 			<para>Copyright 2011 ArtiVisi Intermedia</para>
+			<mediaobject>
+				<imageobject>
+					<imagedata fileref="images/cc-by-sa.png" align="center" />
+				</imageobject>
+			</mediaobject>
+
+			<para>
+				Buku ini berlisensi Creative Commons Attribution-Share-Alike.
+			</para>
+			<para>
+				Artinya, semua orang bebas untuk menggunakan dan mengubah isi buku
+				ini	baik untuk keperluan non-profit maupun komersial
+				dengan syarat tetap mencantumkan penulis aslinya
+				dan melisensikan perubahannya dengan lisensi yang sama.  
+			</para>
 		</legalnotice>
 	</bookinfo>
 
