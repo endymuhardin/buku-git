@@ -20,5 +20,5 @@
 		</legalnotice>
 	</bookinfo>
 
-	<xi:include href="chapters/intro.xml" />
+	<xi:include href="chapters/part-01.xml" />
 </book>

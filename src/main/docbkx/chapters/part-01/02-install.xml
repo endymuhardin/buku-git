@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter PUBLIC "-//OASIS//DTD DocBook XML V4.4//EN" "http://www.oasis-open.org/docbook/xml/4.4/docbookx.dtd">
+
+
+<chapter id="01.02.install">
+		<title>Instalasi Git</title>
+
+		<section id="01.02.01.windows">
+			<title>Instalasi Git di Ubuntu</title>
+			<para>
+				TODO 
+			</para>
+		</section>
+		
+		<section id="01.02.02.ubuntu">
+			<title>Instalasi Git di Ubuntu</title>
+			<para>
+				TODO 
+			</para>
+		</section>
+		
+		<section id="01.02.03.mac">
+			<title>Instalasi Git di Mac</title>
+			<para>
+				TODO 
+			</para>
+		</section>
+
+	</chapter>
