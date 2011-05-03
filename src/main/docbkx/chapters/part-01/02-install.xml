@@ -3,27 +3,27 @@
 
 
 <chapter id="01.02.install">
-		<title>Instalasi Git</title>
+	<title>Instalasi Git</title>
 
-		<section id="01.02.01.windows">
-			<title>Instalasi Git di Ubuntu</title>
-			<para>
-				TODO 
+	<section id="01.02.01.windows">
+		<title>Instalasi Git di Windows</title>
+		<para>
+			TODO 
 			</para>
-		</section>
-		
-		<section id="01.02.02.ubuntu">
-			<title>Instalasi Git di Ubuntu</title>
-			<para>
-				TODO 
-			</para>
-		</section>
-		
-		<section id="01.02.03.mac">
-			<title>Instalasi Git di Mac</title>
-			<para>
-				TODO 
-			</para>
-		</section>
+	</section>
 
-	</chapter>
+	<section id="01.02.02.ubuntu">
+		<title>Instalasi Git di Ubuntu</title>
+		<para>
+			TODO 
+			</para>
+	</section>
+
+	<section id="01.02.03.mac">
+		<title>Instalasi Git di Mac</title>
+		<para>
+			TODO 
+			</para>
+	</section>
+
+</chapter>

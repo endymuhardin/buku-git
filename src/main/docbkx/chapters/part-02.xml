@@ -4,4 +4,49 @@
 <part xmlns:xi="http://www.w3.org/2001/XInclude" id="02.management">
 	<title>Manajemen Proyek dan Produk</title>
 
+	<chapter id="02.01.workflow.shared">
+		<title>Shared Repository Workflow</title>
+	</chapter>
+	
+	<chapter id="02.02.workflow.individual">
+		<title>Individual Repository Workflow</title>
+	</chapter>
+	
+	<chapter id="02.03.branch.policy">
+		<title>Kebijakan Branch</title>
+	</chapter>
+	
+	<chapter id="02.04.merge-rebase.policy">
+		<title>Kebijakan Merge dan Rebase</title>
+	</chapter>
+	
+	<chapter id="02.05.case.staged-release">
+		<title>Studi Kasus : Multi Stage Release</title>
+		<para>
+		Pada studi kasus ini, kita akan melihat cara melakukan rilis aplikasi secara bertahap, 
+		yaitu dari programmer, masuk ke internal tester, kemudian ke user tester (UAT), dan rilis ke production.
+		Ini adalah prosedur rilis yang lazim digunakan di banyak perusahaan software development.
+		</para>
+	</chapter>
+	
+	<chapter id="02.06.case.multi-customer">
+		<title>Studi Kasus : Multi Customer</title>
+		<para>
+		Pada studi kasus ini, kita akan melihat cara mengelola varian produk berdasarkan customer.
+		Hal ini lazim terjadi di perusahaan yang menjual produk aplikasi 
+		dimana aplikasi tersebut bisa dikustomisasi sesuai keinginan customer.
+		</para>
+	</chapter>
+	
+	<chapter id="02.07.case.open-source">
+		<title>Studi Kasus : Aplikasi Open Source</title>
+		<para>
+		Pada studi kasus ini, kita akan melihat cara mengelola pengembangan aplikasi open source. 
+		Model pengembangan ini unik karena kontributornya bisa datang dari mana saja 
+		dengan aktivitas kontribusi yang beragam pula. 
+		Ada yang rajin mengirim kontribusi, ada yang frekuensi kontribusinya jarang, 
+		dan ada juga yang hanya mengirim sekali saja setelah itu menghilang. 
+		</para>
+	</chapter>
+
 </part>

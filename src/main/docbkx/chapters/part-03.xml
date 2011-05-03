@@ -3,5 +3,17 @@
 
 <part xmlns:xi="http://www.w3.org/2001/XInclude" id="03.administration">
 	<title>Administrasi Server</title>
-
+	
+	<chapter id="03.01.gitosis">
+		<title>Administrasi Gitosis</title>
+	</chapter>
+	
+	<chapter id="03.01.redmine">
+		<title>Administrasi Redmine</title>
+	</chapter>
+	
+	<chapter id="03.02.gerrit">
+		<title>Administrasi Gerrit</title>
+	</chapter>
+	
 </part>

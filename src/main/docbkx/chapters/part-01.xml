@@ -5,5 +5,10 @@
 	<title>Penggunaan Git Sehari-hari</title>
 
 	<xi:include href="part-01/01-intro.xml" />
+	<xi:include href="part-01/02-install.xml" />
+	<xi:include href="part-01/03-basic.xml" />
+	<xi:include href="part-01/04-branch-merge-rebase.xml" />
+	<xi:include href="part-01/05-diff-patch.xml" />
+	<xi:include href="part-01/06-remote.xml" />
 
 </part>

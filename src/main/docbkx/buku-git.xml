@@ -21,4 +21,6 @@
 	</bookinfo>
 
 	<xi:include href="chapters/part-01.xml" />
+	<xi:include href="chapters/part-02.xml" />
+	<xi:include href="chapters/part-03.xml" />
 </book>
