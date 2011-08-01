@@ -1,15 +1,27 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-		
+
 	<groupId>com.artivisi.buku</groupId>
 	<artifactId>buku-git</artifactId>
 	<packaging>pom</packaging>
 	<version>1.0.0</version>
-	
+
 	<name>Buku Git</name>
 	<inceptionYear>2011</inceptionYear>
-	
-	
+
+	<repositories>
+		<repository>
+			<id>artivisi-public-repository</id>
+			<name>ArtiVisi Public Repository</name>
+			<url>http://forge.artivisi.com:8080/nexus/content/groups/public</url>
+			<layout>default</layout>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+		</repository>
+	</repositories>
+
+
 	<properties>
 		<docbook.source>${project.basedir}/src/main/docbkx</docbook.source>
 		<docbook.target>${project.build.directory}/docbkx</docbook.target>
@@ -141,3 +153,4 @@
 		</plugins>
 	</build>
 </project>
+
