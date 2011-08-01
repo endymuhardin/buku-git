@@ -14,6 +14,8 @@ Cara menggunakan
 Buku ini dibuat dalam format docbook.
 Docbook adalah format penulisan buku dalam XML. Karena XML berbentuk text file biasa, maka kita bisa simpan di dalam version control dengan segala fiturnya, seperti misalnya : riwayat perubahan, membandingkan antar versi, dan lainnya. Lebih detail tentang Docbook dapat dilihat di [Wikipedia](http://en.wikipedia.org/wiki/DocBook "Docbook di Wikipedia")
 
+Buku yang sudah dikonversi ada di [website ArtiVisi](http://artivisi.com/~endy/buku-git/target/docbkx/html/buku-git.html). Setiap ada update terbaru, saya akan mengupdate juga versi yang terpasang di website tersebut.
+
 Membaca file XML tentunya tidak menyenangkan bagi manusia biasa. Dengan demikian, kita harus konversi menjadi format yang lebih manusiawi seperti HTML atau PDF.
 
 Berikut cara konversinya.
