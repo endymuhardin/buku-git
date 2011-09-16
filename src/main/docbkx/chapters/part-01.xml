@@ -414,7 +414,23 @@ See 'git help <command>' for more information on a specific command.
 
 	    <section id="01.03.02.create">
 		    <title>Membuat repository baru</title>
-		    <para></para>
+		    <para>
+                Untuk membuat repository, kita jalankan perintah git init di dalam folder kosong.
+                <command>git init</command>
+                <screen>Initialized empty Git repository in /home/endy/tmp/latihan-git/.git/</screen>
+
+                Dengan demikian, kita telah membuat database
+                untuk menyimpan revision di folder tersebut.
+                Database ini dikenal dengan istilah repository.
+            </para>
+            <para>
+                Repository git berupa hidden folder bernama .git.
+                Karena hidden, mungkin saja tidak terlihat,
+                sehingga kita harus memodifikasi opsi
+                di Windows Explorer, Nautilus,
+                atau aplikasi file manager yang kita gunakan
+                agar menampilkan hidden file/folder.
+		    </para>
 	    </section>
 
 	    <section id="01.03.03.working-staging-repository">
