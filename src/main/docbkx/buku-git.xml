@@ -30,7 +30,7 @@
 				Artinya, semua orang bebas untuk menggunakan dan mengubah isi buku
 				ini	baik untuk keperluan non-profit maupun komersial
 				dengan syarat tetap mencantumkan penulis aslinya
-				dan melisensikan perubahannya dengan lisensi yang sama.  
+				dan melisensikan perubahannya dengan lisensi yang sama.
 			</para>
 		</legalnotice>
 	</bookinfo>
@@ -39,3 +39,4 @@
 	<xi:include href="chapters/part-02.xml" />
 	<xi:include href="chapters/part-03.xml" />
 </book>
+
