@@ -283,12 +283,14 @@
 			    </mediaobject>
 
 			    Screen terakhir biarkan saja seperti yang disarankan.
+			    Ini gunanya untuk mengatasi perbedaan karakter ganti baris
+			    di Windows (CRLF) dan Linux (LF saja)
 
 			    <mediaobject>
 				    <imageobject>
 					    <imagedata fileref="images/01.02.install/msysgit/04-msysgit-install-crlf.png" align="center" />
 				    </imageobject>
-				    <caption>Path Setting</caption>
+				    <caption>Line Endings</caption>
 			    </mediaobject>
 
 		    </para>
