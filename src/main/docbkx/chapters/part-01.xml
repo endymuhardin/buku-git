@@ -296,9 +296,12 @@
 		    </para>
 
 		    <para>
-		        Setelah selesai, kita bisa test dengan membuka command prompt dan mengetik perintah <command>git</command>.
+		        Setelah selesai, kita bisa test
+		        dengan membuka command prompt
+		        dan mengetik perintah <command>git</command>.
 
-		        Kalau instalasi berjalan lancar, maka akan muncul output dari git sebagai berikut.
+		        Kalau instalasi berjalan lancar,
+		        maka akan muncul output dari git sebagai berikut.
 
 		        <screen><![CDATA[
 usage: git [--version] [--exec-path[=<path>]] [--html-path]
@@ -339,7 +342,8 @@ See 'git help <command>' for more information on a specific command.
 	    <section id="01.02.02.ubuntu">
 		    <title>Instalasi Git di Ubuntu</title>
 		    <para>
-                Untuk instalasi di Ubuntu, kita perlu menginstal paket-paket berikut :
+                Untuk instalasi di Ubuntu, kita perlu menginstal paket-paket
+                berikut :
                 <itemizedlist>
                     <listitem>git-core</listitem>
                     <listitem>gitg</listitem>
@@ -399,10 +403,54 @@ See 'git help <command>' for more information on a specific command.
 
     </chapter>
 
-
-
     <chapter id="01.03.basic">
 	    <title>Perintah Dasar</title>
+
+	    <section id="01.03.01.setup">
+	        <title>Konfigurasi Awal</title>
+	        <para></para>
+	    </section>
+
+
+	    <section id="01.03.02.create">
+		    <title>Membuat repository baru</title>
+		    <para></para>
+	    </section>
+
+	    <section id="01.03.03.working-staging-repository">
+	        <title>Working, Staging, dan Commit</title>
+	        <para></para>
+	    </section>
+
+        <section id="01.03.04.status">
+	        <title>Melihat status working folder</title>
+	        <para></para>
+	    </section>
+
+	    <section id="01.03.05.add">
+	        <title>Memasukkan perubahan ke staging area</title>
+	        <para></para>
+	    </section>
+
+	    <section id="01.03.06.commit">
+	        <title>Menyimpan isi staging area ke commit area</title>
+	        <para></para>
+	    </section>
+
+	    <section id="01.03.07.log">
+	        <title>Melihat history perubahan</title>
+	        <para></para>
+	    </section>
+
+	    <section id="01.03.08.diff">
+	        <title>Membandingkan antar versi</title>
+	        <para></para>
+	    </section>
+
+	    <section id="01.03.09.checkout">
+	        <title>Pergi ke masa lalu</title>
+	        <para></para>
+	    </section>
 
     </chapter>
 
