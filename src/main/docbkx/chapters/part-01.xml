@@ -241,15 +241,151 @@
 	    <section id="01.02.01.windows">
 		    <title>Instalasi Git di Windows</title>
 		    <para>
-			    TODO
-			    </para>
+		        Installer Git di Windows dibuatkan oleh MSysGit,
+		        yang bisa diunduh di <ulink url="http://code.google.com/p/msysgit/">websitenya</ulink>.
+		        Unduhlah file yang nama depannya Git, contohnya seperti ini:
+		        Git-1.7.3.1-preview20101002.exe. Ambil saja versi yang terbaru.
+
+                Setelah diunduh, kita bisa langsung jalankan. Berikut panduan
+                screen demi screen.
+
+            </para>
+            <para>
+
+                Screen pertama adalah welcome.
+                <mediaobject>
+				    <imageobject>
+					    <imagedata fileref="images/01.02.install/msysgit/01-msysgit-install-welcome.png" align="center" />
+				    </imageobject>
+				    <caption>Welcome to Git Setup Wizard</caption>
+			    </mediaobject>
+
+			    Langsung saja klik Next.
+
+		    </para>
+		    <para>
+		        Di screen berikutnya, kita perlu mengganti opsinya karena berbeda
+		        dengan setting standar yang ditawarkan. Berikut posisi opsi yang
+		        seharusnya.
+
+		        <mediaobject>
+				    <imageobject>
+					    <imagedata fileref="images/01.02.install/msysgit/02-msysgit-install-component.png" align="center" />
+				    </imageobject>
+				    <caption>Windows Explorer Integration</caption>
+			    </mediaobject>
+
+		        <mediaobject>
+				    <imageobject>
+					    <imagedata fileref="images/01.02.install/msysgit/03-msysgit-install-path.png" align="center" />
+				    </imageobject>
+				    <caption>Path Setting</caption>
+			    </mediaobject>
+
+			    Screen terakhir biarkan saja seperti yang disarankan.
+
+			    <mediaobject>
+				    <imageobject>
+					    <imagedata fileref="images/01.02.install/msysgit/04-msysgit-install-crlf.png" align="center" />
+				    </imageobject>
+				    <caption>Path Setting</caption>
+			    </mediaobject>
+
+		    </para>
+
+		    <para>
+		        Setelah selesai, kita bisa test dengan membuka command prompt dan mengetik perintah <command>git</command>.
+
+		        Kalau instalasi berjalan lancar, maka akan muncul output dari git sebagai berikut.
+
+		        <screen><![CDATA[
+usage: git [--version] [--exec-path[=<path>]] [--html-path]
+           [-p|--paginate|--no-pager] [--no-replace-objects]
+           [--bare] [--git-dir=<path>] [--work-tree=<path>]
+           [-c name=value] [--help]
+           <command> [<args>]
+
+The most commonly used git commands are:
+   add        Add file contents to the index
+   bisect     Find by binary search the change that introduced a bug
+   branch     List, create, or delete branches
+   checkout   Checkout a branch or paths to the working tree
+   clone      Clone a repository into a new directory
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   fetch      Download objects and refs from another repository
+   grep       Print lines matching a pattern
+   init       Create an empty git repository or reinitialize an existing one
+   log        Show commit logs
+   merge      Join two or more development histories together
+   mv         Move or rename a file, a directory, or a symlink
+   pull       Fetch from and merge with another repository or a local branch
+   push       Update remote refs along with associated objects
+   rebase     Forward-port local commits to the updated upstream head
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+   show       Show various types of objects
+   status     Show the working tree status
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+See 'git help <command>' for more information on a specific command.
+		        ]]></screen>
+
+		    </para>
 	    </section>
 
 	    <section id="01.02.02.ubuntu">
 		    <title>Instalasi Git di Ubuntu</title>
 		    <para>
-			    TODO
-			    </para>
+                Untuk instalasi di Ubuntu, kita perlu menginstal paket-paket berikut :
+                <itemizedlist>
+                    <listitem>git-core</listitem>
+                    <listitem>gitg</listitem>
+                </itemizedlist>
+
+                Kalau menggunakan command prompt, berikut perintahnya
+                <command>sudo apt-get install git-core gitg</command>
+		    </para>
+
+		    <para>
+		        Setelah selesai, kita bisa test dengan membuka command prompt dan mengetik perintah <command>git</command>.
+
+		        Kalau instalasi berjalan lancar, maka akan muncul output dari git sebagai berikut.
+
+		        <screen><![CDATA[
+usage: git [--version] [--exec-path[=<path>]] [--html-path]
+           [-p|--paginate|--no-pager] [--no-replace-objects]
+           [--bare] [--git-dir=<path>] [--work-tree=<path>]
+           [-c name=value] [--help]
+           <command> [<args>]
+
+The most commonly used git commands are:
+   add        Add file contents to the index
+   bisect     Find by binary search the change that introduced a bug
+   branch     List, create, or delete branches
+   checkout   Checkout a branch or paths to the working tree
+   clone      Clone a repository into a new directory
+   commit     Record changes to the repository
+   diff       Show changes between commits, commit and working tree, etc
+   fetch      Download objects and refs from another repository
+   grep       Print lines matching a pattern
+   init       Create an empty git repository or reinitialize an existing one
+   log        Show commit logs
+   merge      Join two or more development histories together
+   mv         Move or rename a file, a directory, or a symlink
+   pull       Fetch from and merge with another repository or a local branch
+   push       Update remote refs along with associated objects
+   rebase     Forward-port local commits to the updated upstream head
+   reset      Reset current HEAD to the specified state
+   rm         Remove files from the working tree and from the index
+   show       Show various types of objects
+   status     Show the working tree status
+   tag        Create, list, delete or verify a tag object signed with GPG
+
+See 'git help <command>' for more information on a specific command.
+		        ]]></screen>
+
+		    </para>
 	    </section>
 
 	    <section id="01.02.03.mac">
@@ -260,6 +396,8 @@
 	    </section>
 
     </chapter>
+
+
 
     <chapter id="01.03.basic">
 	    <title>Perintah Dasar</title>
