@@ -585,8 +585,73 @@ user.email=endy.muhardin@gmail.com]]>
             </para>
 	    </section>
 
+	    <section id="01.03.02.istilah">
+		    <title>Istilah dalam Git</title>
+		    <para>
+                Sepanjang buku ini, kita akan banyak menemui istilah-istilah
+                baru. Jangan khawatir bila istilah yang dijelaskan di sini
+                belum bisa dipahami. Seiring dengan pemahaman yang semakin
+                meningkat, istilah-istilah ini akan semakin masuk akal.
+            </para>
 
-	    <section id="01.03.02.create">
+            <para>
+                <itemizedlist>
+                    <listitem>
+                        repository : database yang menyimpan history/
+                        riwayat perubahan
+                    </listitem>
+                    <listitem>
+                        snapshot : potret kondisi file dan folder
+                        pada saat tertentu
+                    </listitem>
+                    <listitem>
+                        commit : snapshot yang disimpan di repository
+                    </listitem>
+                    <listitem>
+                        branch : serangkaian commit yang berkaitan sehingga
+                        kalau digambar seperti garis lurus berisi banyak commit.
+                        Satu repository bisa berisi banyak branch.
+                    </listitem>
+                    <listitem>
+                        master : nama branch default yang diberikan git pada
+                        waktu kita membuat repository. Branch master
+                        ini tidak istimewa. Dia bisa dihapus dan direname sesuka hati.
+                    </listitem>
+                    <listitem>
+                        head : ujung branch, commit terbaru di dalam branch
+                    </listitem>
+                    <listitem>
+                        HEAD : head yang sedang aktif. Walaupun satu repository
+                        bisa memiliki banyak branch, tapi cuma satu yang aktif.
+                    </listitem>
+                    <listitem>
+                        working folder : folder berisi file dan folder tempat
+                        kita bekerja. Biasanya working folder berisi banyak
+                        file source code untuk aplikasi yang sedang kita buat.
+                        Git memantau working folder ini, dan bisa mengetahui
+                        file dan folder mana yang sudah berbeda dari posisi
+                        commit terakhir. Perbedaan atau perubahan ini bisa
+                        disimpan menjadi commit baru, atau dikembalikan ke
+                        kondisi sebelum diubah.
+                    </listitem>
+                    <listitem>
+                        staging area : snapshot dari working folder yang akan
+                        kita simpan pada saat commit. Ini adalah fitur unik
+                        Git yang tidak dimiliki version control lain.
+                        Dengan adanya staging area, kita bisa memilih perubahan
+                        mana yang akan di-commit dan mana yang tidak.
+                    </listitem>
+                    <listitem>
+                        object store : ini adalah database tempat
+                        semua commit disimpan.
+                    </listitem>
+                </itemizedlist>
+            </para>
+
+        </section>
+
+
+	    <section id="01.03.03.create">
 		    <title>Membuat repository baru</title>
 		    <para>
                 Untuk membuat repository, kita jalankan perintah git init di dalam folder kosong.
@@ -630,37 +695,37 @@ user.email=endy.muhardin@gmail.com]]>
 		    </para>
 	    </section>
 
-	    <section id="01.03.03.working-staging-repository">
+	    <section id="01.03.04.working-staging-repository">
 	        <title>Working, Staging, dan Commit</title>
 	        <para></para>
 	    </section>
 
-        <section id="01.03.04.status">
+        <section id="01.03.05.status">
 	        <title>Melihat status working folder</title>
 	        <para></para>
 	    </section>
 
-	    <section id="01.03.05.add">
+	    <section id="01.03.06.add">
 	        <title>Memasukkan perubahan ke staging area</title>
 	        <para></para>
 	    </section>
 
-	    <section id="01.03.06.commit">
+	    <section id="01.03.07.commit">
 	        <title>Menyimpan isi staging area ke commit area</title>
 	        <para></para>
 	    </section>
 
-	    <section id="01.03.07.log">
+	    <section id="01.03.08.log">
 	        <title>Melihat history perubahan</title>
 	        <para></para>
 	    </section>
 
-	    <section id="01.03.08.diff">
+	    <section id="01.03.09.diff">
 	        <title>Membandingkan antar versi</title>
 	        <para></para>
 	    </section>
 
-	    <section id="01.03.09.checkout">
+	    <section id="01.03.10.checkout">
 	        <title>Pergi ke masa lalu</title>
 	        <para></para>
 	    </section>
