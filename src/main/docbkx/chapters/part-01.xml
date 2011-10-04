@@ -199,6 +199,27 @@ target</screen>
 				    Lebih lanjut tentang lisensi ini bisa dilihat di <ulink url="http://creativecommons.org/licenses/"></ulink>
 		        </para>
 		    </section>
+
+		    <section id="01.01.03.06.tentang.buku.tools">
+			    <title>Tools</title>
+			    <para>
+				    Buku ini dibuat menggunakan perangkat pembantu :
+				    <itemizedlist>
+					    <listitem>
+					        <ulink url="http://www.docbook.org">Docbook</ulink> :
+					        format xml untuk menulis buku
+					    </listitem>
+					    <listitem>
+						    <ulink url="http://maven.apache.org">Maven</ulink> :
+						    build tools berbasis Java
+					    </listitem>
+					    <listitem>
+						    <ulink url="http://docbkx.org">Docbkx</ulink> :
+						    plugin Maven untuk memproses Docbook
+					    </listitem>
+				    </itemizedlist>
+		        </para>
+		    </section>
 	    </section>
 
 	    <section id="01.01.04.tentang.kontribusi">
