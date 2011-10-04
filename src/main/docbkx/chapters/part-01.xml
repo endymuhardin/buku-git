@@ -135,7 +135,7 @@
 				    Perintah yang kita berikan pada komputer ditulis seperti ini.
 			    </para>
 			    <para>
-				    <command>git --version</command>
+				    <userinput>git --version</userinput>
 			    </para>
 			    <para>
 				    Hasil yang ditampilkan komputer ditulis seperti ini.
@@ -154,26 +154,24 @@
 				    Berikut contoh kode program HTML.
 
 				    <programlisting language="xml"><![CDATA[<html>
-	    <head>
-		    <title>Halo Dunia</title
-	    </head>
-	    <body>
-		    <h1>Halo Dunia</h1>
-	    </body>
-    </html>]]></programlisting>
+    <head>
+        <title>Halo Dunia</title
+    </head>
+    <body>
+        <h1>Halo Dunia</h1>
+    </body>
+</html>]]></programlisting>
 
 				    Dan ini cara penulisan file konfigurasi
-				    <screen>
-    # Ignore file eclipse
-    .settings
-    .metadata
-    .project
-    .classpath
-    bin
+				    <screen># Ignore file eclipse
+.settings
+.metadata
+.project
+.classpath
+bin
 
-    # Ignore hasil kompilasi Maven
-    target
-				    </screen>
+# Ignore hasil kompilasi Maven
+target</screen>
 		        </para>
 		    </section>
 
@@ -298,13 +296,16 @@
 		    <para>
 		        Setelah selesai, kita bisa test
 		        dengan membuka command prompt
-		        dan mengetik perintah <command>git</command>.
-
+		        dan mengetik perintah
+	        </para>
+	        <para>
+		        <userinput>git</userinput>
+            </para>
+            <para>
 		        Kalau instalasi berjalan lancar,
 		        maka akan muncul output dari git sebagai berikut.
 
-		        <screen><![CDATA[
-usage: git [--version] [--exec-path[=<path>]] [--html-path]
+		        <screen><![CDATA[usage: git [--version] [--exec-path[=<path>]] [--html-path]
            [-p|--paginate|--no-pager] [--no-replace-objects]
            [--bare] [--git-dir=<path>] [--work-tree=<path>]
            [-c name=value] [--help]
@@ -333,8 +334,7 @@ The most commonly used git commands are:
    status     Show the working tree status
    tag        Create, list, delete or verify a tag object signed with GPG
 
-See 'git help <command>' for more information on a specific command.
-		        ]]></screen>
+See 'git help <command>' for more information on a specific command.]]></screen>
 
 		    </para>
 	    </section>
@@ -350,16 +350,19 @@ See 'git help <command>' for more information on a specific command.
                 </itemizedlist>
 
                 Kalau menggunakan command prompt, berikut perintahnya
-                <command>sudo apt-get install git-core gitg</command>
+
 		    </para>
 
 		    <para>
-		        Setelah selesai, kita bisa test dengan membuka command prompt dan mengetik perintah <command>git</command>.
+		        <userinput>sudo apt-get install git-core gitg</userinput>
+		    </para>
+
+		    <para>
+		        Setelah selesai, kita bisa test dengan membuka command prompt dan mengetik perintah <userinput>git</userinput>.
 
 		        Kalau instalasi berjalan lancar, maka akan muncul output dari git sebagai berikut.
 
-		        <screen><![CDATA[
-usage: git [--version] [--exec-path[=<path>]] [--html-path]
+		        <screen><![CDATA[usage: git [--version] [--exec-path[=<path>]] [--html-path]
            [-p|--paginate|--no-pager] [--no-replace-objects]
            [--bare] [--git-dir=<path>] [--work-tree=<path>]
            [-c name=value] [--help]
@@ -388,8 +391,7 @@ The most commonly used git commands are:
    status     Show the working tree status
    tag        Create, list, delete or verify a tag object signed with GPG
 
-See 'git help <command>' for more information on a specific command.
-		        ]]></screen>
+See 'git help <command>' for more information on a specific command.]]></screen>
 
 		    </para>
 	    </section>
