@@ -590,7 +590,9 @@ user.email=endy.muhardin@gmail.com]]>
 		    <title>Membuat repository baru</title>
 		    <para>
                 Untuk membuat repository, kita jalankan perintah git init di dalam folder kosong.
-                <command>git init</command>
+            </para>
+            <para>
+                <userinput>git init</userinput>
                 <screen>Initialized empty Git repository in /home/endy/tmp/latihan-git/.git/</screen>
 
                 Dengan demikian, kita telah membuat database
@@ -604,6 +606,27 @@ user.email=endy.muhardin@gmail.com]]>
                 di Windows Explorer, Nautilus,
                 atau aplikasi file manager yang kita gunakan
                 agar menampilkan hidden file/folder.
+		    </para>
+
+		    <para>
+		        Repository yang baru saja kita buat dapat digunakan untuk
+		        bekerja (memiliki working folder). Ada kalanya kita membuat
+		        repository untuk ditaruh di server dan tidak diakses langsung.
+		        Repository ini disebut <emphasis>bare</emphasis>.
+		        Untuk membuatnya, jalankan <command>git init</command>
+		        dengan opsi <command>--bare</command> seperti ini.
+		    </para>
+
+		    <para>
+		        <userinput>git init --bare</userinput>
+                <screen>Initialized empty Git repository in /home/endy/tmp/latihan-git/</screen>
+		    </para>
+
+		    <para>
+		        Berbeda dengan repository dengan working folder, repository
+		        bare tidak memiliki hidden folder <command>.git</command>.
+		        Folder-folder yang digunakan git untuk menyimpan datanya
+		        langsung digelar di folder repository bare tersebut.
 		    </para>
 	    </section>
 
