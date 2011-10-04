@@ -510,7 +510,79 @@ See 'git help <command>' for more information on a specific command.]]></screen>
 
 	    <section id="01.03.01.setup">
 	        <title>Konfigurasi Awal</title>
-	        <para></para>
+	        <para>
+                Konfigurasi utama yang harus kita lakukan adalah mendaftarkan
+                nama dan email kita. Nama dan email ini akan digunakan untuk
+                mencatat siapa yang membuat perubahan di repository.
+	        </para>
+
+	        <para>
+                Konfigurasi username dan email dilakukan melalui perintah
+                <command>git config</command> sebagai berikut:
+            </para>
+            <para>
+                <userinput>git config user.name "Endy Muhardin"</userinput>
+            </para>
+            <para>
+                <userinput>git config user.email endy.muhardin@gmail.com</userinput>
+            </para>
+            <para>
+                Hasilnya bisa kita lihat menggunakan perintah <command>git config --list</command>.
+                Berikut contohnya:
+            </para>
+            <para>
+                <userinput>git config --list</userinput>
+                <screen>
+<![CDATA[user.name=Endy Muhardin
+user.email=endy.muhardin@gmail.com]]>
+                </screen>
+	        </para>
+
+            <para>
+                Selain username dan email, buat kita yang sering menggunakan
+                commandline, perlu juga untuk mengaktifkan pewarnaan.
+            </para>
+            <para>
+                <userinput>git config color.ui true</userinput>
+            </para>
+
+            <para>
+                Konfigurasi user dan email di atas hanya berlaku di satu
+                repository saja. Bila kita membuat repository lain, kita harus
+                melakukan konfigurasi tersebut lagi.
+                Bila kita menggunakan komputer dengan username pribadi
+                (bukan komputer umum seperti di warnet atau di lab komputer)
+                kita tentu ingin sekali konfigurasi berlaku untuk semua repository.
+                Untuk itu, kita bisa menggunakan opsi <command>--global</command>
+                seperti contoh berikut :
+            </para>
+            <para>
+                <userinput>git config --global user.name "Endy Muhardin"</userinput>
+            </para>
+
+            <para>
+                Bagi pengguna TortoiseGit, konfigurasi dilakukan menggunakan
+                klik kanan.
+
+                <mediaobject>
+				    <imageobject>
+					    <imagedata fileref="images/01.02.install/tortoisegit/07-tortoisegit-setting.png" align="center" />
+				    </imageobject>
+				    <caption>Settings Menu</caption>
+			    </mediaobject>
+
+			    Setelah itu, pilih menu Config di tab kiri.
+
+			    <mediaobject>
+				    <imageobject>
+					    <imagedata fileref="images/01.02.install/tortoisegit/08-tortoisegit-config.png" align="center" />
+				    </imageobject>
+				    <caption>Konfigurasi username dan email</caption>
+			    </mediaobject>
+
+			    Di sana juga disediakan tombol untuk memberlakukan konfigurasi
+			    secara local atau global.
+            </para>
 	    </section>
 
 
