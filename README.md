@@ -11,30 +11,19 @@ Mudah-mudahan dengan adanya buku ini, programmer Indonesia bisa menjadi lebih ko
 Cara menggunakan
 ----------------
 
-Buku ini dibuat dalam format docbook.
-Docbook adalah format penulisan buku dalam XML. Karena XML berbentuk text file biasa, maka kita bisa simpan di dalam version control dengan segala fiturnya, seperti misalnya : riwayat perubahan, membandingkan antar versi, dan lainnya. Lebih detail tentang Docbook dapat dilihat di [Wikipedia](http://en.wikipedia.org/wiki/DocBook "Docbook di Wikipedia")
+Buku ini dibuat dalam format markdown.
 
-Buku yang sudah dikonversi ada di [website ArtiVisi](http://artivisi.com/~endy/buku-git/target/docbkx/html/buku-git.html). Setiap ada update terbaru, saya akan mengupdate juga versi yang terpasang di website tersebut.
+Walaupun format markdown didesain untuk bisa dibaca apa adanya, kadangkala kita butuh format lain seperti PDF agar buku ini bisa dicetak. Untuk mengkonversi Markdown menjadi PDF, kita menggunakan aplikasi yang bernama Pandoc.
 
-Membaca file XML tentunya tidak menyenangkan bagi manusia biasa. Dengan demikian, kita harus konversi menjadi format yang lebih manusiawi seperti HTML atau PDF.
+Lebih lanjut tentang Markdown, Pandoc, dan cara konversinya bisa dibaca di [blog saya](http://software.endy.muhardin.com/aplikasi/membuat-dokumen-dengan-markdown-dan-pandoc/).
 
-Berikut cara konversinya.
+Cara konversi ke PDF
+Untuk mengkonversi buku menjadi PDF, gunakan perintah berikut:
 
-Kebutuhan Aplikasi
-------------------
-1. Java SDK versi terbaru
-2. Maven 2 versi terbaru
+```
+pandoc --template artivisi-template.tex  --variable mainfont="Droid Serif" --variable sansfont="Droid Sans" --variable monofont="Inconsolata" --variable fontsize=12pt --variable version=1.9 --variable subtitle="Menggunakan Git untuk mengelola pembangunan aplikasi" --latex-engine=xelatex --toc -N -o buku-git.pdf *md
+```
 
-Cara konversi
--------------
-1. Clone dulu repositorynya untuk mengambil source code buku dalam format docbook
-2. Buka command prompt dan masuk ke folder buku-git
-3. Konversi dengan perintah mvn clean install
-4. Buku hasil pemrosesan ada di folder target
-
-Cara edit
----------
-Docbook adalah XML biasa. Gunakan editor XML untuk mengeditnya. Di editor canggih, kita bisa menggunakan fitur autocomplete untuk membuat tag docbook
 
 Cara kontribusi
 ---------------
