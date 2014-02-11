@@ -81,3 +81,36 @@ menyimpan datanya langsung digelar di folder repository bare tersebut.
 ## Diff dan Patch ##
 
 ## Remote Repository ##
+
+## Tips dan Tricks ##
+	Sebelum kita menyelesaikan bab tentang dasar-dasar Git ini,
+beberapa tips dan triks dapat membuat pengalaman Git Anda lebih sederhana, mudah, atau bahkan akrab.
+Banyak orang menggunakan Git tanpa menggunakan tip-tip berikut ini, 
+dan kami tidak akan merujuk kepada mereka atau mengasumsikan bahwa Anda telah menggunakannya nanti dalam buku ini; 
+tetapi Anda mungkin sebaiknya mengetahui bagaimana menggunakannya. 
+
+Auto-Completion
+
+Jika Anda menggunakan Bash shell, Git tersedia dengan sebuah script auto-completion yang dapat Anda hidupkan. Unduh source-code Git, dan cari direktori contrib/completion; di sana Anda akan menemukan berkas bernama git-completion.bash. Salin berkas ini ke direktori home Anda, dan tambahakn ini ke dalam berkas .bashrc:
+
+	source ~/.git-completion.bash
+
+Jika Anda ingin memasang Git agar secara otomatis menggunakan fitur ini bagi semua pengguna, salin script tadi ke direktori /opt/local/etc/bash_completion.d di sistem Mac atau ke direktori /etc/bash_completion.d/ di sistem Linux. Ini adalah direktori tempat script yang akan secara otomatis dibaca oleh Bash untuk menyediakan fitur auto-complete nya.
+
+Jika Anda menggunakan Windows dengan Git Bash, yang sebetulnya adalah setting default ketika instalasi Git di Windows menggunakan msysGit, fitur ini seharusnya sudah terkonfigurasi.
+
+Pencet huruf Tab ketika Anda menuliskan perintah Git, dan Bash akan menampilkan beberapa kemungkinan yang Anda dapat pilih:
+
+$ git co<tab><tab>
+commit config
+Dalam hal ini, mengetikkan git co dan memencet kunci Tab 2x akan menampilkan pilihan commit dan config. Dengan menambahkan m<tab> akan melengkapi git commit secara otomatis.
+
+Hal ini juga bekerja terhadap opsi, yang mungkin lebih berguna. Sebagai contoh, jika Anda menjalankan perintah git log dan tidak ingat salah satu dari opsi yang tersedia, Anda dapat mulai mengetikkannya dan memencet Tab untuk melihat apa yang cocok:
+
+$ git log --s<tab>
+--shortstat  --since=  --src-prefix=  --stat   --summary
+Ini adalah trick yang cukup menarik dan dapat menghemat waktu Anda dan waktu membaca dokumentasi.
+
+
+
+
