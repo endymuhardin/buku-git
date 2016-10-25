@@ -4,18 +4,39 @@
 
 Installer Git di Windows dibuatkan oleh MSysGit, yang bisa diunduh di
 [websitenya](http://code.google.com/p/msysgit/). Unduhlah file yang nama
-depannya Git, contohnya seperti ini: Git-1.7.3.1-preview20101002.exe.
+depannya Git, contohnya seperti ini: Git-2.10.1-64-bit.exe.
 Ambil saja versi yang terbaru. Setelah diunduh, kita bisa langsung
 jalankan. Berikut panduan screen demi screen.
 
-Screen pertama adalah welcome. Welcome to Git Setup Wizard Langsung saja
-klik Next.
+Screen pertama adalah License. Langsung saja klik Next.
+
+![LICENSE](../resources/images/01.02.install/msysgit/01-msysgit-install-license.png)
+
+Pada bagian ini kita pilih komponen yang ingin diinstall. Anda dapat mengikuti seperti berikut ini lalu klik Next. 
+
+![Install](../resources/images/01.02.install/msysgit/02-msysgit-install-component-1.png)
 
 Di screen berikutnya, kita perlu mengganti opsinya karena berbeda dengan
 setting standar yang ditawarkan. Berikut posisi opsi yang seharusnya.
-Windows Explorer Integration Path Setting Screen terakhir biarkan saja
+![PathIntegration](../resources/images/01.02.install/msysgit/03-msysgit-install-path-1.png)
+
+Configuring The Line Ending Conversions biarkan saja
 seperti yang disarankan. Ini gunanya untuk mengatasi perbedaan karakter
-ganti baris di Windows (CRLF) dan Linux (LF saja) Line Endings
+ganti baris di Windows (CRLF) dan Linux (LF saja) Line Endings.
+
+![Install](../resources/images/01.02.install/msysgit/04-msysgit-install-crlf-1.png)
+
+Selanjutnya pilih sesuai opsi yang disarankan.
+
+![PathIntegration](../resources/images/01.02.install/msysgit/05-config-terminal-emulator.png)
+
+Berikut juga opsi tambahan, pilih sesuai berikut.
+
+![PathIntegration](../resources/images/01.02.install/msysgit/06-config-extra-options.png)
+
+Jika muncul seperti berikut, berarti perlu menutup aplikasi tersebut  yang ada dalam daftar terlebih dahulu sebelum install.
+
+![PathIntegration](../resources/images/01.02.install/msysgit/07-replacing-in-use-files.png)
 
 Setelah selesai, kita bisa test dengan membuka command prompt dan
 mengetik perintah
@@ -30,7 +51,7 @@ sebagai berikut.
                [--bare] [--git-dir=<path>] [--work-tree=<path>]
                [-c name=value] [--help]
                <command> [<args>]
-
+    
     The most commonly used git commands are:
        add        Add file contents to the index
        bisect     Find by binary search the change that introduced a bug
@@ -53,7 +74,7 @@ sebagai berikut.
        show       Show various types of objects
        status     Show the working tree status
        tag        Create, list, delete or verify a tag object signed with GPG
-
+    
     See 'git help <command>' for more information on a specific command.
 
 ## Instalasi Git di Ubuntu ##
@@ -76,7 +97,7 @@ muncul output dari git sebagai berikut.
                [--bare] [--git-dir=<path>] [--work-tree=<path>]
                [-c name=value] [--help]
                <command> [<args>]
-
+    
     The most commonly used git commands are:
        add        Add file contents to the index
        bisect     Find by binary search the change that introduced a bug
@@ -99,7 +120,7 @@ muncul output dari git sebagai berikut.
        show       Show various types of objects
        status     Show the working tree status
        tag        Create, list, delete or verify a tag object signed with GPG
-
+    
     See 'git help <command>' for more information on a specific command.
 
 ## Instalasi Git di Mac ##
@@ -155,7 +176,7 @@ Berikut contohnya:
 
     user.name=Endy Muhardin
     user.email=endy.muhardin@gmail.com
-                    
+
 
 Selain username dan email, buat kita yang sering menggunakan
 commandline, perlu juga untuk mengaktifkan pewarnaan.
