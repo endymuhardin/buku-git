@@ -8,35 +8,50 @@ depannya Git, contohnya seperti ini: Git-2.10.1-64-bit.exe.
 Ambil saja versi yang terbaru. Setelah diunduh, kita bisa langsung
 jalankan. Berikut panduan screen demi screen.
 
-Screen pertama adalah License. Langsung saja klik Next.
+1. Screen pertama adalah License. Langsung saja klik Next. (Figure 1)
+
 
 ![LICENSE](../resources/images/01.02.install/msysgit/01-msysgit-install-license.png)
 
-Pada bagian ini kita pilih komponen yang ingin diinstall. Anda dapat mengikuti seperti berikut ini lalu klik Next. 
+
+2. Pada bagian ini kita pilih komponen yang ingin diinstall. Anda dapat mengikuti seperti berikut ini lalu klik Next. (Figure 2)
+
 
 ![Install](../resources/images/01.02.install/msysgit/02-msysgit-install-component-1.png)
 
-Di screen berikutnya, kita perlu mengganti opsinya karena berbeda dengan
-setting standar yang ditawarkan. Berikut posisi opsi yang seharusnya.
-![PathIntegration](../resources/images/01.02.install/msysgit/03-msysgit-install-path-1.png)
 
-Configuring The Line Ending Conversions biarkan saja
+3. Di screen berikutnya, kita perlu mengganti opsinya karena berbeda dengan
+setting standar yang ditawarkan. Berikut posisi opsi yang seharusnya. (Figure 3)
+
+
+![Path Integration](../resources/images/01.02.install/msysgit/03-msysgit-install-path-1.png)
+
+
+4. Configuring The Line Ending Conversions biarkan saja
 seperti yang disarankan. Ini gunanya untuk mengatasi perbedaan karakter
-ganti baris di Windows (CRLF) dan Linux (LF saja) Line Endings.
+ganti baris di Windows (CRLF) dan Linux (LF saja) Line Endings. (Figure 4)
 
-![Install](../resources/images/01.02.install/msysgit/04-msysgit-install-crlf-1.png)
 
-Selanjutnya pilih sesuai opsi yang disarankan.
+![Line Ending Style](../resources/images/01.02.install/msysgit/04-msysgit-install-crlf-1.png)
 
-![PathIntegration](../resources/images/01.02.install/msysgit/05-config-terminal-emulator.png)
 
-Berikut juga opsi tambahan, pilih sesuai berikut.
+5. Selanjutnya pilih sesuai opsi yang disarankan. (Figure 5)
 
-![PathIntegration](../resources/images/01.02.install/msysgit/06-config-extra-options.png)
 
-Jika muncul seperti berikut, berarti perlu menutup aplikasi tersebut  yang ada dalam daftar terlebih dahulu sebelum install.
+![Configure Terminal Emulator](../resources/images/01.02.install/msysgit/05-config-terminal-emulator.png)
 
-![PathIntegration](../resources/images/01.02.install/msysgit/07-replacing-in-use-files.png)
+
+6. Berikut juga opsi tambahan, pilih sesuai berikut. (Figure 6)
+
+
+![Extra Options](../resources/images/01.02.install/msysgit/06-config-extra-options.png)
+
+
+7. Jika muncul seperti berikut, berarti perlu menutup aplikasi tersebut  yang ada dalam daftar terlebih dahulu sebelum install. (Figure 7)
+
+
+![Replacing in use files](../resources/images/01.02.install/msysgit/07-replacing-in-use-files.png)
+
 
 Setelah selesai, kita bisa test dengan membuka command prompt dan
 mengetik perintah
