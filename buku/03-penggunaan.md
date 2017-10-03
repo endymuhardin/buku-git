@@ -61,6 +61,10 @@ seperti ini.
 Berbeda dengan repository dengan working folder, repository bare tidak
 memiliki hidden folder `.git`. Folder-folder yang digunakan git untuk
 menyimpan datanya langsung digelar di folder repository bare tersebut.
+## Mengunduh sebuah repo ##
+
+Untuk mengunduh sebuah repo anda cukup melakukan :
+`git clone (alamat repository,misal https://github.com/endymuhardin/buku-git.git)`
 
 ## Working, Staging, dan Commit ##
 
