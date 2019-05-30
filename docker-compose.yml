@@ -1,0 +1,11 @@
+version: '3.3'
+
+services:
+  buku-git:
+    container_name: buku-git
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:80"
+    restart: always
