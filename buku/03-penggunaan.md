@@ -85,6 +85,8 @@ Untuk mengunduh sebuah repo anda cukup melakukan :
 ## Diff dan Patch ##
 
 ## Remote Repository ##
+Untuk Remote repository, anda bisa melakukan perintah ini :
+`git remote set-url origin (alamat repository,misal https://github.com/endymuhardin/buku-git.git)`
 
 ## Tips dan Tricks ##
 
